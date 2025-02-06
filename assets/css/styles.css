@@ -54,6 +54,7 @@ ul {
 }
 
 a {
+    color: black;
     text-decoration: none;
 }
 
@@ -73,6 +74,11 @@ button {
 
 /****************************** UTILITIES ******************************/
     /****************************** Structure ******************************/
+    .wrapper {
+        margin-inline: auto;
+        width: min(1200px, 100% - 2rem);
+    }
+
     .flow > * + * {
         margin-top: var(--flow);
     }
@@ -131,7 +137,41 @@ button {
 
 
     /****************************** Buttons & Links ******************************/
-    
+    .btn {
+        display: inline-block;
+    }
+
+    .btn-primary {
+        padding: .75rem 1.5rem;
+        border-radius: 1rem;
+        background-color: blue;
+    }
     /****************************** Buttons & Links ******************************/
 
 /****************************** UTILITIES ******************************/
+
+/****************************** HERO SECTION ******************************/
+.hero-section .full-wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "stacking";
+}
+
+.hero-content, .hero-img-wrapper {
+    grid-area: stacking;
+}
+
+.hero-content {
+    margin-inline: auto;
+    width: min(1200px, 100% - 2rem);
+    color: white;
+}
+
+.hero-img-wrapper {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+}
+/****************************** HERO SECTION ******************************/
