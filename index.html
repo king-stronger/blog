@@ -10,262 +10,265 @@
     <div id="app">
         <header class="header">
             <div class="wrapper">
-                <div class="header-content">
-                    <a href="/" class="logo">DevThoughts</a>
-        
-                    <nav class="nav">
-                        <ul class="nav-list">
-                            <li><a href="#blog" class="nav-link">Blog</a></li>
-                            <li><a href="#about" class="nav-link">About</a></li>
-                            <li><a href="#projects" class="nav-link">Projects</a></li>
-                            <li><a href="#contact" class="nav-link">Contact</a></li>
-                        </ul>
-                    </nav>
-        
-                    <a href="#newsletter" class="btn-header">Subscribe</a>
-                </div>
+                <h1><a href="/" class="text-md">DevThoughts</a></h1>
+    
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#blog" class="nav-link link">Blog</a></li>
+                        <li><a href="#about" class="nav-link link">About</a></li>
+                        <li><a href="#projects" class="nav-link link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link link">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <a href="#newsletter" class="btn btn-primary">Subscribe</a>
             </div>
         </header>        
 
-        <main class="main">
+        <main class="main flow-xxl">
             <section class="hero-section">
                 <div class="full-wrapper">
                     <div class="hero-img-wrapper">
                         <img src="assets/img/hero3.jpg" alt="Author at work" class="hero-img">
                     </div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Hey, I'm Alex <br> a Web Developer & Tech Writer</h1>
+                        <h1 class="hero-title text-xl">
+                            <span>Hey, I'm John Doe</span> <br>
+                            <span>a Web Developer & Tech Writer</span>
+                        </h1>
                         <p class="hero-text">
                             I write about front-end development, JavaScript, modern frameworks, and lessons from real-world projects. This blog is my space to share ideas, code, and experiences from the dev world.
                         </p>
-                        <a href="#blog" class="btn-primary">Read My Articles</a>
+                        <a href="#blog" class="btn btn-secondary">Read My Articles</a>
                     </div>
                 </div>
             </section>            
 
             <section class="recents-section">
-                <div class="wrapper">
-                    <h2>Recent Blog Posts</h2>
+                <div class="wrapper flow-lg">
+                    <h2 class="text-lg">Recent Blog Posts</h2>
             
                     <div class="blog-list">
                         <article class="blog">
-                            <img src="images/svelte-vue.jpg" alt="Svelte vs Vue" class="blog-image">
-                            <h3 class="blog-title">Why I Switched from Vue to Svelte</h3>
-                            <p class="blog-content">Exploring my transition to Svelte — the simplicity, the pros, and what I learned.</p>
+                            <img src="assets/img/svelte.jpg" alt="Svelte vs Vue" class="blog-image">
+                            <h3 class="blog-title text">Why I Switched from Vue to Svelte</h3>
+                            <p class="blog-content text-sm">Exploring my transition to Svelte — the simplicity, the pros, and what I learned.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author1.jpg" alt="Author Image">
-                                    <span>Jane Doe</span>
+                                    <img src="assets/img/profile.jpeg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Jane Doe</span>
                                 </div>
-                                <p class="blog-date">Feb 12, 2025</p>
+                                <p class="blog-date text-xs">Feb 12, 2025</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/git-commands.jpg" alt="Git commands" class="blog-image">
-                            <h3 class="blog-title">10 Git Commands Every Developer Should Know</h3>
-                            <p class="blog-content">A practical guide to mastering Git for smoother workflows and fewer headaches.</p>
+                            <img src="assets/img/git.jpg" alt="Git commands" class="blog-image">
+                            <h3 class="blog-title text">10 Git Commands Every Developer Should Know</h3>
+                            <p class="blog-content text-sm">A practical guide to mastering Git for smoother workflows and fewer headaches.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author2.jpg" alt="Author Image">
-                                    <span>John Smith</span>
+                                    <img src="assets/img/profile2.jpg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">John Smith</span>
                                 </div>
-                                <p class="blog-date">Jan 30, 2025</p>
+                                <p class="blog-date text-xs">Jan 30, 2025</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/astro-portfolio.jpg" alt="Astro and Tailwind portfolio" class="blog-image">
-                            <h3 class="blog-title">Building My Portfolio with Astro & Tailwind</h3>
-                            <p class="blog-content">How I created a fast, clean portfolio using modern tools and static site generators.</p>
+                            <img src="assets/img/astro.jpg" alt="Astro and Tailwind portfolio" class="blog-image">
+                            <h3 class="blog-title text">Building My Portfolio with Astro & Tailwind</h3>
+                            <p class="blog-content text-sm">How I created a fast, clean portfolio using modern tools and static site generators.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author1.jpg" alt="Author Image">
-                                    <span>Jane Doe</span>
+                                    <img src="assets/img/profile.jpeg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Jane Doe</span>
                                 </div>
-                                <p class="blog-date">Jan 15, 2025</p>
+                                <p class="blog-date text-xs">Jan 15, 2025</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/vscode-tools.jpg" alt="VS Code Extensions" class="blog-image">
-                            <h3 class="blog-title">7 VS Code Extensions That Boost My Productivity</h3>
-                            <p class="blog-content">From GitLens to Prettier, here are the tools I use daily in my dev environment.</p>
+                            <img src="assets/img/vscode.webp" alt="VS Code Extensions" class="blog-image">
+                            <h3 class="blog-title text">7 VS Code Extensions That Boost My Productivity</h3>
+                            <p class="blog-content text-sm">From GitLens to Prettier, here are the tools I use daily in my dev environment.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author3.jpg" alt="Author Image">
-                                    <span>Alex Rivera</span>
+                                    <img src="assets/img/profile2.jpg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Alex Rivera</span>
                                 </div>
-                                <p class="blog-date">Jan 8, 2025</p>
+                                <p class="blog-date text-xs">Jan 8, 2025</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/productivity.jpg" alt="Productivity habits" class="blog-image">
-                            <h3 class="blog-title">5 Habits That Made Me a More Productive Developer</h3>
-                            <p class="blog-content">Simple practices that helped me stay focused and avoid burnout.</p>
+                            <img src="assets/img/habits.jpg" alt="Productivity habits" class="blog-image">
+                            <h3 class="blog-title text">5 Habits That Made Me a More Productive Developer</h3>
+                            <p class="blog-content text-sm">Simple practices that helped me stay focused and avoid burnout.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author2.jpg" alt="Author Image">
-                                    <span>John Smith</span>
+                                    <img src="assets/img/profile.jpeg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">John Smith</span>
                                 </div>
-                                <p class="blog-date">Dec 29, 2024</p>
+                                <p class="blog-date text-xs">Dec 29, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/js-tricks.jpg" alt="JavaScript tips" class="blog-image">
-                            <h3 class="blog-title">JavaScript Tricks You Probably Didn't Know</h3>
-                            <p class="blog-content">Little-known features and shortcuts that can save you time and headaches.</p>
+                            <img src="assets/img/javascript.jpg" alt="JavaScript tips" class="blog-image">
+                            <h3 class="blog-title text">JavaScript Tricks You Probably Didn't Know</h3>
+                            <p class="blog-content text-sm">Little-known features and shortcuts that can save you time and headaches.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author1.jpg" alt="Author Image">
-                                    <span>Jane Doe</span>
+                                    <img src="assets/img/profile2.jpg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Jane Doe</span>
                                 </div>
-                                <p class="blog-date">Dec 20, 2024</p>
+                                <p class="blog-date text-xs">Dec 20, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/side-project.jpg" alt="Side project failure" class="blog-image">
-                            <h3 class="blog-title">What I Learned from a Failed Side Project</h3>
-                            <p class="blog-content">Failure can be a great teacher — here’s how mine helped me grow as a developer.</p>
+                            <img src="assets/img/failed.jpg" alt="Side project failure" class="blog-image">
+                            <h3 class="blog-title text">What I Learned from a Failed Side Project</h3>
+                            <p class="blog-content text-sm">Failure can be a great teacher — here’s how mine helped me grow as a developer.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author3.jpg" alt="Author Image">
-                                    <span>Alex Rivera</span>
+                                    <img src="assets/img/profile.jpeg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Alex Rivera</span>
                                 </div>
-                                <p class="blog-date">Dec 10, 2024</p>
+                                <p class="blog-date text-xs">Dec 10, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/typescript.jpg" alt="TypeScript" class="blog-image">
-                            <h3 class="blog-title">Getting Started with TypeScript: A Friendly Guide</h3>
-                            <p class="blog-content">TypeScript doesn’t have to be scary. Here's how I finally got comfortable using it.</p>
+                            <img src="assets/img/typescript.webp" alt="TypeScript" class="blog-image">
+                            <h3 class="blog-title text">Getting Started with TypeScript: A Friendly Guide</h3>
+                            <p class="blog-content text-sm">TypeScript doesn’t have to be scary. Here's how I finally got comfortable using it.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author2.jpg" alt="Author Image">
-                                    <span>John Smith</span>
+                                    <img src="assets/img/profile2.jpg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">John Smith</span>
                                 </div>
-                                <p class="blog-date">Nov 30, 2024</p>
+                                <p class="blog-date text-xs">Nov 30, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/css-darkmode.jpg" alt="Dark Mode CSS" class="blog-image">
-                            <h3 class="blog-title">Implementing Dark Mode with Pure CSS</h3>
-                            <p class="blog-content">No JavaScript required — create beautiful dark themes using CSS variables.</p>
+                            <img src="assets/img/dark.jpg" alt="Dark Mode CSS" class="blog-image">
+                            <h3 class="blog-title text">Implementing Dark Mode with Pure CSS</h3>
+                            <p class="blog-content text-sm">No JavaScript required — create beautiful dark themes using CSS variables.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author1.jpg" alt="Author Image">
-                                    <span>Jane Doe</span>
+                                    <img src="assets/img/profile.jpeg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Jane Doe</span>
                                 </div>
-                                <p class="blog-date">Nov 15, 2024</p>
+                                <p class="blog-date text-xs">Nov 15, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/blogging-tools.jpg" alt="Blogging tools" class="blog-image">
-                            <h3 class="blog-title">My Favorite Blogging Tools in 2025</h3>
-                            <p class="blog-content">From writing to publishing, these tools keep my blog running smoothly.</p>
+                            <img src="assets/img/tools.jpg" alt="Blogging tools" class="blog-image">
+                            <h3 class="blog-title text">My Favorite Blogging Tools in 2025</h3>
+                            <p class="blog-content text-sm">From writing to publishing, these tools keep my blog running smoothly.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author2.jpg" alt="Author Image">
-                                    <span>John Smith</span>
+                                    <img src="assets/img/profile2.jpg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">John Smith</span>
                                 </div>
-                                <p class="blog-date">Nov 5, 2024</p>
+                                <p class="blog-date text-xs">Nov 5, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/responsive-design.jpg" alt="Responsive Design" class="blog-image">
-                            <h3 class="blog-title">Making Layouts More Responsive with CSS Grid</h3>
-                            <p class="blog-content">How I use CSS Grid to create flexible, accessible designs that work on all devices.</p>
+                            <img src="assets/img/grid.jpg" alt="Responsive Design" class="blog-image">
+                            <h3 class="blog-title text">Making Layouts More Responsive with CSS Grid</h3>
+                            <p class="blog-content text-sm">How I use CSS Grid to create flexible, accessible designs that work on all devices.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author3.jpg" alt="Author Image">
-                                    <span>Alex Rivera</span>
+                                    <img src="assets/img/profile.jpeg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">Alex Rivera</span>
                                 </div>
-                                <p class="blog-date">Oct 28, 2024</p>
+                                <p class="blog-date text-xs">Oct 28, 2024</p>
                             </div>
                         </article>
             
                         <article class="blog">
-                            <img src="images/api-rest.jpg" alt="REST APIs" class="blog-image">
-                            <h3 class="blog-title">Understanding REST APIs: A Developer's Introduction</h3>
-                            <p class="blog-content">Whether you're building or consuming APIs, this guide covers the fundamentals.</p>
+                            <img src="assets/img/api.jpg" alt="REST APIs" class="blog-image">
+                            <h3 class="blog-title text">Understanding REST APIs: A Developer's Introduction</h3>
+                            <p class="blog-content text-sm">Whether you're building or consuming APIs, this guide covers the fundamentals.</p>
                             <div class="blog-info">
                                 <div class="blog-author">
-                                    <img src="images/author2.jpg" alt="Author Image">
-                                    <span>John Smith</span>
+                                    <img src="assets/img/profile2.jpg" alt="Author Image" class="author-img">
+                                    <span class="text-xs">John Smith</span>
                                 </div>
-                                <p class="blog-date">Oct 15, 2024</p>
+                                <p class="blog-date text-xs">Oct 15, 2024</p>
                             </div>
                         </article>
                     </div>
+
+                    <a href="#" class="btn btn-primary explore-button">Explore</a>
                 </div>
             </section>            
         </main>
 
         <footer class="footer">
             <div class="wrapper">
-                <div>
-                    <h2 class="footer-brand">The Dev Journal</h2>
+                <div class="footer-main flow-sm">
+                    <h2 class="footer-brand text-normal">The Dev Journal</h2>
                     <p>
                         Welcome to my blog where I share my journey in web development, tech insights, personal projects, and thoughts on productivity and creativity.
                     </p>    
                 </div>
         
-                <ul class="footer-menu">
+                <ul class="footer-menu flow-sm">
                     <li class="footer-menu-item">
-                        <h2 class="footer-title">About</h2>
+                        <h2 class="footer-title text-normal">About</h2>
                     </li>
                     <li class="footer-menu-item">
-                        <a href="/about" class="footer-menu-link">Who I Am</a>
+                        <a href="/about" class="link link-primary">Who I Am</a>
                     </li>
                     <li class="footer-menu-item">
-                        <a href="/contact" class="footer-menu-link">Contact Me</a>
+                        <a href="/contact" class="link link-primary">Contact Me</a>
                     </li>
                     <li class="footer-menu-item">
-                        <a href="/newsletter" class="footer-menu-link">Newsletter</a>
-                    </li>
-                </ul>
-        
-                <ul class="footer-menu">
-                    <li class="footer-menu-item">
-                        <h2 class="footer-title">Categories</h2>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a href="/category/development" class="footer-menu-link">Development</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a href="/category/design" class="footer-menu-link">Design & UX</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a href="/category/productivity" class="footer-menu-link">Productivity</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a href="/category/tech-news" class="footer-menu-link">Tech News</a>
+                        <a href="/newsletter" class="link link-primary">Newsletter</a>
                     </li>
                 </ul>
         
-                <ul class="footer-menu">
+                <ul class="footer-menu flow-sm">
                     <li class="footer-menu-item">
-                        <h2 class="footer-title">Resources</h2>
+                        <h2 class="footer-title text-normal">Categories</h2>
                     </li>
                     <li class="footer-menu-item">
-                        <a href="/resources/tools" class="footer-menu-link">Recommended Tools</a>
+                        <a href="/category/development" class="link link-primary">Development</a>
                     </li>
                     <li class="footer-menu-item">
-                        <a href="/resources/reading" class="footer-menu-link">Reading List</a>
+                        <a href="/category/design" class="link link-primary">Design & UX</a>
                     </li>
                     <li class="footer-menu-item">
-                        <a href="/resources/tutorials" class="footer-menu-link">Tutorials</a>
+                        <a href="/category/productivity" class="link link-primary">Productivity</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/category/tech-news" class="link link-primary">Tech News</a>
+                    </li>
+                </ul>
+        
+                <ul class="footer-menu flow-sm">
+                    <li class="footer-menu-item">
+                        <h2 class="footer-title text-normal">Resources</h2>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/resources/tools" class="link link-primary">Recommended Tools</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/resources/reading" class="link link-primary">Reading List</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/resources/tutorials" class="link link-primary">Tutorials</a>
                     </li>
                 </ul>
             </div>
-        </footer>        
+        </footer>      
     </div>
 </body>
 </html>
