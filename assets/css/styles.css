@@ -158,10 +158,25 @@ button {
         color: var(--clr-accent);
     }
 
-    .btn {
+    .btn, .btn-xs, .btn-sm, .btn-lg {
         display: inline-block;
         border-radius: .5rem;
+    }
+
+    .btn {
         padding: .75rem 2rem;
+    }
+
+    .btn-xs {
+        padding: .5rem 1rem;
+    }
+    
+    .btn-sm {
+        padding: .5rem 1.5rem;
+    }
+
+    .btn-lg {
+        padding: 1rem 2.5rem;
     }
 
     .btn-primary {
@@ -209,6 +224,51 @@ button {
 
 .nav-link {
     font-size: var(--fs-300);
+}
+
+.nav-button, .nav-close {
+    display: none;
+}
+
+.login i {
+    display: none;
+}
+
+@media(width < 700px){
+    .nav-list {
+        position: fixed;
+        inset: 0 0 0 0;
+        height: 100svh;
+        row-gap: 1rem;
+        translate: 0 -110%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: translate 300ms;
+        background-color: var(--clr-background);
+    }
+
+    .nav-list.show {
+        translate: 0 0;
+    }
+
+    .nav-button, .nav-close {
+        display: block;
+    }
+
+    :has(> .nav-button){
+        display: flex;
+        column-gap: .5rem;
+        align-items: center;
+    }
+
+    .login span {
+        display: none;
+    }
+
+    .login i {
+        display: block;
+    }
 }
 /****************************** HEADER ******************************/
 
