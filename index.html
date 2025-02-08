@@ -14,8 +14,8 @@
                 <h1><a href="/" class="text-md">DevThoughts</a></h1>
     
                 <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-close">
+                    <ul class="nav-list" id="menu">
+                        <li class="nav-close" id="close-button">
                             <button class="nav-link link">
                                 <span class="bx bx-x"></span>
                             </button>
@@ -32,7 +32,7 @@
                         <span>Subscribe</span>
                         <i class="bx bx-log-in"></i>
                     </a>
-                    <button class="nav-button link">
+                    <button class="nav-button link" id="nav-button">
                         <i class='bx bx-menu-alt-right' ></i>
                     </button>
                 </div>
@@ -284,5 +284,27 @@
             </div>
         </footer>      
     </div>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const navButton = document.getElementById("nav-button");
+        const closeButton = document.getElementById("close-button");
+    
+        const preventTouchScroll = function (e) {
+            e.preventDefault();
+        };
+    
+        navButton.addEventListener("click", () => {
+            menu.classList.add("show");
+    
+            menu.addEventListener('touchmove', preventTouchScroll, { passive: false });
+        });
+    
+        closeButton.addEventListener("click", () => {
+            menu.classList.remove("show");
+    
+            menu.removeEventListener('touchmove', preventTouchScroll, { passive: false });
+        });
+    </script>
 </body>
 </html>
